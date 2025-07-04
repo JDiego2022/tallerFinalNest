@@ -27,8 +27,12 @@ Sigue estos sencillos pasos para tener la API funcionando en tu máquina local:
 1.  *Clona el repositorio del proyecto:*
     Abre tu terminal y ejecuta:
     bash
+<<<<<<< HEAD
     git clone [https://https://github.com/JDiego2022/tallerFinalNest]
     cd proyecto_final
+=======
+    git clone [https://github.com/JDiego2022/tallerFinalNest.git]
+>>>>>>> e692acd89407adf0410ec2c29595fffd0ef8b6b2
     
 
 2.  *Instala las dependencias del proyecto:*
@@ -56,4 +60,8 @@ Sigue estos sencillos pasos para tener la API funcionando en tu máquina local:
     
     La API estará accesible en http://localhost:3000 (o el puerto que hayas especificado en tu archivo .env). TypeORM se encargará de sincronizar automáticamente el esquema de la base de datos con las entidades definidas en el código.
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> e692acd89407adf0410ec2c29595fffd0ef8b6b2
