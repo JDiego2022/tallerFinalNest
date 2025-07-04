@@ -8,7 +8,7 @@
 
 ---
 
-## 🚀 Configuración Inicial
+## Configuración Inicial
 
 Para poner en marcha este proyecto, asegúrate de contar con las siguientes herramientas en tu entorno de desarrollo:
 
@@ -20,7 +20,7 @@ Para poner en marcha este proyecto, asegúrate de contar con las siguientes herr
     npm install -g @nestjs/cli
     
 
-## ▶ Guía de Inicio Rápido
+## Guía de Inicio Rápido
 
 Sigue estos sencillos pasos para tener la API funcionando en tu máquina local:
 
