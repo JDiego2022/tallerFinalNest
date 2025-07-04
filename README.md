@@ -27,8 +27,7 @@ Sigue estos sencillos pasos para tener la API funcionando en tu máquina local:
 1.  *Clona el repositorio del proyecto:*
     Abre tu terminal y ejecuta:
     bash
-    git clone [https://github.com/maria45607/proyecto_final.git](https://github.com/maria45607/proyecto_final.git)
-    cd proyecto_final
+    git clone [https://github.com/JDiego2022/tallerFinalNest.git]
     
 
 2.  *Instala las dependencias del proyecto:*
