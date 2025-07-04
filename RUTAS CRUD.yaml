@@ -1,0 +1,557 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_c915c47b8a864da5b7782aba5afe5235
+  created: 1749239163912
+  modified: 1749239163912
+  description: ""
+collection:
+  - name: Categorias
+    meta:
+      id: fld_6db0020a8cd84719bf9dae9639db75a2
+      created: 1749239215063
+      modified: 1751595804010
+      sortKey: -1749239215063
+      description: ""
+    children:
+      - url: http://[::1]:3000/categoria-instrumento/2
+        name: VerCategoriaPorId
+        meta:
+          id: req_64c45b6ec4fa4747b62a44c0972d3c8c
+          created: 1749239249223
+          modified: 1751595646841
+          isPrivate: false
+          description: ""
+          sortKey: -1749239249223
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/categoria-instrumento
+        name: VerCategorias
+        meta:
+          id: req_2c123f91783b40439879ab87dcec4082
+          created: 1749244338727
+          modified: 1751595594152
+          isPrivate: false
+          description: ""
+          sortKey: -1749244338727
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/categoria-instrumento/2
+        name: EliminarCategoriaPorId
+        meta:
+          id: req_66b1b27b30d94502b6fcf162b6a0f082
+          created: 1749245235733
+          modified: 1751595637092
+          isPrivate: false
+          description: ""
+          sortKey: -1749245235733
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/categoria-instrumento
+        name: CrearCategoria
+        meta:
+          id: req_c92d010c85df49259c273b8f4df92de4
+          created: 1749247781075
+          modified: 1751595579797
+          isPrivate: false
+          description: ""
+          sortKey: -1749247781075
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+                "nombre": "Cuchillos",
+                "descripcion": "Instrumentos para cortar."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/categoria-instrumento/1
+        name: ActualizarCategoria
+        meta:
+          id: req_7b144607252d496ebd44cc886ecd61c9
+          created: 1751595673996
+          modified: 1751596373858
+          isPrivate: false
+          description: ""
+          sortKey: -1751595673996
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "nombre": "cuchillos",
+                "descripcion": "Instrumentos para cortar."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Proveedor
+    meta:
+      id: fld_4d238dcf3ae0431294cee49d9aaac8a7
+      created: 1751595845167
+      modified: 1751595845167
+      sortKey: -1751595845167
+      description: ""
+    children:
+      - url: http://[::1]:3000/proveedor/1
+        name: ActualizarProveedor
+        meta:
+          id: req_20efccb8f57b4db0a03d2f777383ab85
+          created: 1751595891714
+          modified: 1751596612889
+          isPrivate: false
+          description: ""
+          sortKey: -1751595951824
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |
+            {
+                "nombre": "Medical Supply SAS."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/proveedor
+        name: CrearProveedor
+        meta:
+          id: req_7eafcae2d5234b8ab1cc5a954dcf0836
+          created: 1751595912693
+          modified: 1751596528939
+          isPrivate: false
+          description: ""
+          sortKey: -1751595951624
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+                "nombre": "Herramientas SAS",
+                "contacto": "ventas@Heramientas.com",
+                "direccion": "Calle 10 # 20-30, Bello"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/proveedor/2
+        name: EliminarProveedorPorId
+        meta:
+          id: req_6f3844cda25442d3b7f751623c61f508
+          created: 1751595932041
+          modified: 1751596790048
+          isPrivate: false
+          description: ""
+          sortKey: -1751595951724
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/proveedor
+        name: VerProveedores
+        meta:
+          id: req_1e823cdaa91645ffb05e6a3e4deb7557
+          created: 1751596007294
+          modified: 1751597233050
+          isPrivate: false
+          description: ""
+          sortKey: -1751595951924
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/proveedor/1
+        name: VerProveedorPorId
+        meta:
+          id: req_b8601089c8bf4183b0730ba877836b17
+          created: 1751596030064
+          modified: 1751596704529
+          isPrivate: false
+          description: ""
+          sortKey: -1751595952024
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: UbicacionAlmacen
+    meta:
+      id: fld_4b6aff22926e4ec5bfecf2ad7aa638a6
+      created: 1751596649130
+      modified: 1751596649130
+      sortKey: -1751596649130
+      description: ""
+    children:
+      - url: http://[::1]:3000/ubicacion-almacen/1
+        name: VerAlmacenPorId
+        meta:
+          id: req_5b6bb2034b184d7a8c99cbeb66ee1b58
+          created: 1751596718350
+          modified: 1751596882942
+          isPrivate: false
+          description: ""
+          sortKey: -1751596724331
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/ubicacion-almacen
+        name: VerAlmacenes
+        meta:
+          id: req_8ae8ce47c976463ca4e7c9bf0a25800b
+          created: 1751596754527
+          modified: 1751597837582
+          isPrivate: false
+          description: ""
+          sortKey: -1751596724431
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/ubicacion-almacen/1
+        name: ActualizarAlmacen
+        meta:
+          id: req_69723d454a21417c9a2006180f6998e0
+          created: 1751596773460
+          modified: 1751596963676
+          isPrivate: false
+          description: ""
+          sortKey: -1751596724531
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |
+            {
+                "nombre": "Almacén Secundario - Estante B"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/ubicacion-almacen/1
+        name: EliminarAlmacenPorId
+        meta:
+          id: req_4c88c3c2215848ed8109dbd7d9e67f4f
+          created: 1751596802087
+          modified: 1751598488362
+          isPrivate: false
+          description: ""
+          sortKey: -1751596724631
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/ubicacion-almacen
+        name: CrearAlmacen
+        meta:
+          id: req_73ed066fa7a74a5f963eb709476a235f
+          created: 1751596820850
+          modified: 1751597782196
+          isPrivate: false
+          description: ""
+          sortKey: -1751596724731
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+                "nombre": "Almacén Principal - Estante C",
+                "descripcion": "Estante para instrumentos de uso frecuente."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: InstrumentoQuirurgico
+    meta:
+      id: fld_377478f9ef0f42c2830533222c3a949f
+      created: 1751597039004
+      modified: 1751597039004
+      sortKey: -1751597039004
+      description: ""
+    children:
+      - url: http://[::1]:3000/instrumentos-quirurgicos
+        name: CrearInstrumento
+        meta:
+          id: req_3fe0cbeade824225a2a9a4d52796efc9
+          created: 1751597729567
+          modified: 1751598043095
+          isPrivate: false
+          description: ""
+          sortKey: -1751597750858
+        method: POST
+        body:
+          mimeType: application/json
+          text: |+
+            {
+                "nombre": "Tijeras Juan diego",
+                "descripcion": "Tijeras finas.",
+                "precioUnitario": 100.000,
+                "cantidadStock": 40,
+                "fechaAdquisicion": "2024-06-02",
+                "categoriaId": 1,  
+                "proveedorId": 1,   
+                "ubicacionId": 1  
+            }
+
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/instrumentos-quirurgicos/2
+        name: EliminarInstrumentoPorId
+        meta:
+          id: req_73627e685bc947fcabdf87fafc162a3d
+          created: 1751597795653
+          modified: 1751598123951
+          isPrivate: false
+          description: ""
+          sortKey: -1751597750958
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/instrumentos-quirurgicos/1
+        name: ActualizarInstrumento
+        meta:
+          id: req_7cb9b1f4b7dd467a87f8eea0bcfe7b72
+          created: 1751597827284
+          modified: 1751598559881
+          isPrivate: false
+          description: ""
+          sortKey: -1751597751058
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "nombre": "Tijeras Juan diego",
+                "descripcion": "Tijeras finas.",
+                "precioUnitario": 100.000,
+                "cantidadStock": 40,
+                "fechaAdquisicion": "2024-06-02",
+                "categoriaId": 1,  
+                "proveedorId": 1,   
+                "ubicacionId": 4 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/instrumentos-quirurgicos
+        name: VerInstrumentos
+        meta:
+          id: req_0cc5bc94ebee4627b7204d5a0b200d92
+          created: 1751597853231
+          modified: 1751597907237
+          isPrivate: false
+          description: ""
+          sortKey: -1751597751158
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/instrumentos-quirurgicos/1
+        name: VerInstrumentoPorId
+        meta:
+          id: req_5e68b082355549d7bbc871e7e84a5251
+          created: 1751597884308
+          modified: 1751597967260
+          isPrivate: false
+          description: ""
+          sortKey: -1751597751258
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_232faab5bf41fd3d99dfe0242333a1fabf2820a0
+    created: 1749239163933
+    modified: 1749239163933
+environments:
+  name: Base Environment
+  meta:
+    id: env_232faab5bf41fd3d99dfe0242333a1fabf2820a0
+    created: 1749239163929
+    modified: 1749239163929
+    isPrivate: false
